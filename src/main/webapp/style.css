@@ -22,10 +22,12 @@ body {
 }
 
 .box {
-	width: 500px;
+	width: auto;
 	height: auto;
+	padding: 25px;
 	background: #fff;
 	border-radius: 5px;
+	text-align: center;
 }
 
 img {
@@ -40,25 +42,26 @@ h2 {
 }
 
 .Botao1 {
-	display: block;
+	display: inline-block;
 	text-decoration: none;
 	background-color: #66bbff;
 	padding: 10px 5px;
 	color: #FFF;
 	font-weight: bold;
 	font-family: Arial;
+	text-align: center;
 	border-radius: 5px;
 	width: 120px;
 	height: 20px;
 	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 20px;
-	text-align: center;
 	border: 0;
 	cursor: pointer;
 }
 
-.Botao2{
-	display: block;
+.Botao2 {
 	text-decoration: none;
 	background-color: #66bbff;
 	padding: 5px;
@@ -69,10 +72,23 @@ h2 {
 	text-align: center;
 	border: 0;
 	cursor: pointer;
-	
+}
+
+.Botao3 {
+	text-decoration: none;
+	background-color: #d51213;
+	padding: 5px;
+	color: #FFF;
+	font-weight: bold;
+	font-family: Arial;
+	border-radius: 5px;
+	text-align: center;
+	border: 0;
+	cursor: pointer;
 }
 
 .Caixa1 {
+	display: block;
 	width: 280px;
 	padding: 5px;
 	margin-bottom: 10px;
@@ -81,12 +97,22 @@ h2 {
 }
 
 .Caixa2 {
+	display: block;
 	padding: 5px;
 	margin-bottom: 10px;
 	border: 1px solid #66bbff;
 	border-radius: 5px;
 }
-#tabelaNovo{
+
+.Caixa3 {
+	display: block;
+	width: 25px;
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #ff0000;
+}
+
+#tabelaNovo {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
@@ -96,12 +122,11 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
-	
 }
 
 #tabela th {
 	border: 1px solid #ddd;
-	padding: 50 px;
+	padding: 5px;
 	text-align: left;
 	background-color: #66bbff;
 	color: #fff;
@@ -109,5 +134,5 @@ h2 {
 
 #tabela td {
 	border: 1px solid #ddd;
-	padding: 25 px;
+	padding: 5px;
 }

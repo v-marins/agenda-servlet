@@ -3,6 +3,7 @@
 <%@ page import="model.Javabeans"%>
 <%@ page import="java.util.ArrayList"%>
 <%
+@SuppressWarnings("unchecked")
 ArrayList<Javabeans> lista = (ArrayList<Javabeans>) request.getAttribute("contatos");
 %>
 <!DOCTYPE html>
@@ -17,7 +18,8 @@ ArrayList<Javabeans> lista = (ArrayList<Javabeans>) request.getAttribute("contat
 	<div class="container">
 		<div class="box">
 			<h2>Lista de Contatos</h2>
-			<a href="novo.html" class="Botao1">Novo contato</a>
+			<a href="novo.html" class="Botao1">Novo contato</a> <a href="report"
+				class="Botao1">Relatório</a>
 			<table id="tabela">
 				<thead>
 					<tr>
@@ -37,7 +39,10 @@ ArrayList<Javabeans> lista = (ArrayList<Javabeans>) request.getAttribute("contat
 						<td><%=lista.get(i).getNome()%></td>
 						<td><%=lista.get(i).getFone()%></td>
 						<td><%=lista.get(i).getEmail()%></td>
-						<td><a href="select?idcon=<%=lista.get(i).getIdcon()%>" class="Botao2">Editar</a></td>
+						<td><a href="select?idcon=<%=lista.get(i).getIdcon()%>"
+							class="Botao2">Editar</a> <a
+							href="javascript: confirmar(<%=lista.get(i).getIdcon()%>)"
+							class="Botao3">Excluir</a></td>
 					</tr>
 					<%
 					}
@@ -46,5 +51,6 @@ ArrayList<Javabeans> lista = (ArrayList<Javabeans>) request.getAttribute("contat
 			</table>
 		</div>
 	</div>
+	<script type="text/javascript" src="scripts/confirmador.js"></script>
 </body>
 </html>
